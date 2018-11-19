@@ -1,0 +1,62 @@
+div{background-color: blue;
+    margin: 1px;}
+#bonhomme{margin-left: 150px;
+    margin-top: 150px;;
+    background-color: white;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 205px;}
+#test{background-color: white;
+    width:200px;}
+#tete{margin-left: 40px;
+    width:120px;
+    height:100px;
+    border-top-left-radius:100px;
+    border-top-right-radius:100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;}
+.oeil{width:10px;
+    height:10px;
+    margin: 20px;
+    margin-top:80px;
+    border-radius:5px;
+    background-color: white;}
+#bradroit, #bragauche{width:30px;
+    height:100px;
+    border-radius: 15px;}
+#corps{width:120px;
+    height:150px;
+    border-bottom-left-radius:40px ;
+    border-bottom-right-radius: 40px;}
+#jambedroit{margin-top: -8px;
+    width: 30px;
+    height: 80px;
+    border-radius: 15px;
+    margin-left:40px;}
+#jambegauche{margin-top:-8px;
+    width: 30px;
+    height: 80px;
+    border-radius: 15px;
+    margin-right:40px;}
+#jambegauche:hover, #bragauche:hover{transform: rotateZ(-15deg);}
+#jambedroit:hover, #bradroit:hover{transform: rotatez(15deg);}
+#tete:hover{width:200px;
+    margin-left:0px;}
+#tete:hover .oeil{transform: translate(-25px);}
+#bonhomme:hover #jambedroit, #bonhomme:hover #bradroit{animation: rund .5s linear alternate-reverse infinite;}
+#bonhomme:hover #jambegauche,#bonhomme:hover #bragauche{animation: rung .5s linear .5s alternate-reverse infinite;}
+#bonhomme:hover{animation: scale .5s linear alternate-reverse infinite;}
+#bonhomme:hover .oeil{animation: scaleoeil 2s linear infinite;}
+@keyframes rund{100%{transform: rotate(50deg);}}
+@keyframes rung{100%{transform: rotate(-50deg);}}
+@keyframes scale{100%{transform: scale(1.05)}}
+@keyframes scaleoeil{0%{transform: translateX(25px); height:10px}
+    20%{transform: translateX(25px); height:10px}
+    40%{transform:translateX(25px); height:10px}
+    60%{transform:translateX(0px); height:10px}
+    65%{transform: translateX(0px); height:1px}
+    80%{transform: translateX(0px); height:1px}
+    90%{transform: translateX(0px); height:10px}
+    100%{transform: translateX(25px);height:10px;}}

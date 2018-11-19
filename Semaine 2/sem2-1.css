@@ -1,0 +1,20 @@
+#flex{
+    margin: 0;padding: 0;
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: green dashed 1px;
+    border:black solid 2px;
+}
+div{
+    background-color: aqua;
+    border: red solid 1px;
+    padding: 15px;
+}
+/* .diff{
+    background-color:yellow;
+    color:white;
+    flex:auto;
+    align-self: flex-start;
+} */

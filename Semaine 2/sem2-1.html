@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="sem2-1.css">
+</head>
+<body>
+    <div id="flex">
+    <div>TROIS</div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div class="diff">TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    <div>TROIS </div>
+    </div>
+    <button type="button" onclick="myFunction()"> Changer chiffre parfois</button>
+    <button type="button" onclick="myFunction5()"> Changer chiffre parfois</button>
+    <button type="button" onclick="myFunction2()">Changer couleur</button>
+    <button type="button" onclick="myFunction3()">Cacher tout</button>
+    <button type="button" onclick="myFunction4()">Montrer tout</button>
+    <script>
+        function myFunction(){
+            var x = document.getElementsByClassName("diff");
+            var i;
+            for (i=0; i<x.length;i++){
+                x[i].innerHTML ="quatrevingsmillionsetdemi";
+            }
+        }
+        function myFunction2(){
+            var x = document.getElementsByClassName("diff");
+            var i;
+            for (i=0; i<x.length;i++){
+                x[i].style.backgroundColor="black";
+            }
+            
+        }
+        function myFunction3(){
+            document.getElementById("flex").style.display="none";
+        }
+        function myFunction4(){
+            document.getElementById("flex").style.display="flex";
+        }
+        function myFunction5(){
+            var y = document.getElementsByClassName("diff");
+            var i;
+            for (i=0; i<x.length;i++){
+                y[i].innerHTML ="quatrevingsmillionsetdemi";
+            }
+        }
+    </script>
+</body>
+</html>
