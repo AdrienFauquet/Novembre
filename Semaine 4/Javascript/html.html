@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oui</title>
+    <link id="stylecss" rel="stylesheet" href="jaune.css">
+    <script>z = "jaune.css"</script>
+</head>
+
+<body>
+    <p id="myMsg"></p>
+    <p id="saisie">Bonjour, qui êtes vous?</p>
+    <button onclick="maFonction()">Je répond</button>
+    <p>Qu'êtes vous</p>
+    <form>
+        <input type="radio" name="gender" value="female"> Femme<br>
+        <input type="radio" name="gender" value="male"> Homme<br>
+        <input type="radio" name="gender" value="other"> Lemurien
+    </form>
+    <p id="sexe"></p>
+    <p id="vieux"></p>
+    <p id="pilou"></p>
+    <p id="myMsg"></p>
+    <img src="../Javascript/images/homertriste.png" width="300px" onclick="myChgt()" id="cgt">
+    <p id="clic1" onclick="funcId()">Clic un</p>
+    <p id="clic2" onclick="funcId()">Clic deux</p>
+    <p id="clic3" onclick="funcId()">Clic trois</p>
+    <p id="clic4" onclick="funcId()">Clic quatre</p>
+    <button onclick="funcStyle()">Clicagement</button>
+
+
+    <script>
+        // changement de couleur des paragraphes
+        function funcStyle() {
+            if (z == "jaune.css") {
+                document.getElementById("stylecss").href = "vert.css"; z = "vert.css";
+            }
+            else {
+                document.getElementById("stylecss").href = "jaune.css"; z = "jaune.css";
+            }
+        }
+        // changement de contenu des paragraphes NE FONCTIONNE PAS 
+        // function funcId(){
+        //     document.getElementById("id").innerHTML = "CHANGEMENT DANS LE PARAGRAPHE";
+        // }
+
+        // Détermination résultat suivant note 
+        // var note = 0.1;
+        // if (note < 0) { document.getElementById("myMsg").innerHTML = "Valeur négative impossible" }
+        // else if (note < 5) {
+        //     document.getElementById("myMsg").innerHTML = "Mauvais";
+        // }
+        // else if (note < 11) {
+        //     document.getElementById("myMsg").innerHTML = "Passable";
+        // }
+        // else if (note < 16) {
+        //     document.getElementById("myMsg").innerHTML = "Bon";
+        // }
+        // else if (note < 21) {
+        //     document.getElementById("myMsg").innerHTML = "Wow";
+        // }
+        // else {
+        //     document.getElementById("myMsg").innerHTML = "Erreur";
+        // }
+
+
+
+      //création de la fonction de saisie
+        // function maFonction() {
+        //     var saisie = prompt('Vous êtes');
+        //     if (saisie != null) {
+        //         document.getElementById("saisie").innerHTML = "Bonjour " + saisie + " !";
+        //         document.getElementById("saisie").style.color = "red";
+        //     }
+        // }
+
+        // var x = prompt("Homme ou femme?");
+        // if (x == "femme" || x == "Femme") {
+        //     document.getElementById("sexe").innerHTML = "Bonjour Madame.";
+        // }
+        // else if (x == "homme" || x == "Homme") {
+        //     document.getElementById("sexe").innerHTML = "Bonjour Monsieur.";
+        // }
+        // else if (x == "other") {
+        //     document.getElementById("sexe").innerHTML = "Bonjour Lémure.";
+        // }
+        // // Saisie age via prompt RACCOURCIE
+        // var age = prompt("Quel âge avez vous?");
+        // personne = "vous"; couleur = "";
+        // if (age < 0) { personne = "Vous n'existez pas"; }
+        // else if (age < 18 && (x == "femme")) {
+        //     personne = "jeune fille"; couleur = "blue";
+        // }
+        // else if (age < 18 && (x == "homme")) {
+        //     personne = "jeune homme"; couleur = "red";
+        // }
+        // else if (age < 70 && (x == "homme")) {
+        //     personne = "monsieur";
+        // }
+        // else if (age < 70 && (x == "femme")) {
+        //     personne = "madame";
+        // }
+        // else if (age >= 70 && (x == "femme")) {
+        //     personne = "mémé";
+        // }
+        // else if (age >= 70 && (x == "homme")) { personne = "pépé"; }
+        // else { personne = "machin"; }
+
+        // alert(couleur);
+        // document.getElementById("vieux").innerHTML = "Bonjour " + personne;
+        // document.getElementById("vieux").style.color = couleur;
+
+        // //pile ou face
+        // var piece = prompt("Pile ou face?");
+        // document.getElementById("pilou").innerHTML = (piece == "pile") ? "Gagné" : (piece == "face") ? "Perdu" : "Veuillez actualiser la page et taper 'pile' ou 'face' ";
+
+        // //changement d'image
+        // function myChgt() {
+        //     document.getElementById("cgt").src = "../Javascript/images/simpsons_PNG88.png";
+        // }
+
+
+    </script>
+
+</body>
+
+</html>
